@@ -65,7 +65,7 @@ Rush cards are tried in this order:
 
 If one source does not have the picture, the downloader tries the next one.
 
-## Rush only options
+## Rush Only Options
 
 ### Beta Option
 `Match duplicate Rush fallback rarities (beta)` is turned on by default.
