@@ -1,31 +1,23 @@
 # EDOPro Standard/Rush HD Pics Downloader
-Warning! AI Slop! But it works! 
-Warning! Tested only on Windows. Linux and macOS might might be buggy. 
+Warning! AI Slop! But it works! <br>
+Tested only on Windows. Linux and macOS might might be buggy. 
 
 This is a simple HD picture downloader for EDOPro.
 It can download:
 - Standard card pictures
 - Rush Duel card pictures
 - cropped Field Spell pictures
-
-Put the files in your EDOPro folder and run the Python downloader.
-
 ## Easy Install
-1. Use the "install-python-dependencies" file for your operating system or [install Python 3.12 manually](https://www.python.org/downloads/). 
-  - The downloader also uses `tkinter`, which is the normal Python window/GUI system. On Windows it usually comes with Python. On Linux/macOS it may need to be installed separately.
+Put the files in your EDOPro folder, where EDOPro.exe is. Do not put them inside the `pics` folder.
+1. Use the "install-python-dependencies" file for your operating system or [install Python 3.12 manually](https://www.python.org/downloads/).
+    - The downloader.py also uses `tkinter`, which is the normal Python window/GUI system. On Windows it usually comes with Python. On Linux/macOS it may need to be installed separately.
 
-2. On Windows, double-click the `EDOPro-Standard-Rush-HD-Pics-Downloader.py` file to run. Only works if Python is installed. 
+2. On Windows, double-click the `EDOPro-Standard-Rush-HD-Pics-Downloader.py` file to run it. Only works if Python is installed.
 
-## Where The File Goes
-The downloader should be inside your EDOPro folder, like this:
-```text
-EDOPro/
-  EDOPro-Standard-Rush-HD-Pics-Downloader.py
-  pics/
-  expansions/
-  repositories/
-```
-Do not put it inside the `pics` folder.
+> [!WARNING]
+> Yugipedia may occasionally be unstable. This usually only affect Rush cards downloads.<br>
+> If some images fail to download, wait a few hours and try again before reporting a bug.<br>
+> If "**Skip same size or larger**" is enabled, it will mostly skip previously downloaded ones and do the ones that failed.<br>
 
 ## Main Options
 
@@ -56,6 +48,7 @@ If you download PNG, it can delete the old JPG.
 
 ### Skip if current image is same size or larger
 For fixed-size downloads, this skips pictures that are already big enough.
+Note: Some YGOProDeck images are at only 421x614 or lower, so they will always download at those sizes. 
 
 ## Rush Picture Sources
 Rush cards are tried in this order:
@@ -106,7 +99,6 @@ The `Check App Updates` button checks if there is a newer version of this downlo
 It does not check for new card pictures.
 
 ## Notes
-
 - Python Pillow is needed for resizing and converting images.
 - If you only download full-quality pictures in the same format, some downloads can work without Pillow.
 - On Linux, Python tkinter may need a separate package.
