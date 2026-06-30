@@ -53,30 +53,35 @@ If you download PNG, it can delete the old JPG.
 For fixed-size downloads, this skips pictures that are already big enough.
 Note: Some YGOProDeck images are at only 421x614 or lower, so they will always download at those sizes. 
 
+## Standard Picture Sources
+1. YGOPROdeck
+2. Yugipedia (usualyl not used)
+
 ## Rush Picture Sources
 Rush cards are tried in this order:
 1. Rush-HD GitHub
-2. YGOPRODeck (usually skipped)
-3. Yugipedia
+2. Yugipedia
+3. This Github for missed Fields only
 
 If one source does not have the picture, the downloader tries the next one.
 
-## Field Spell Pictures
+## Rush only options
 
-The downloader can also download cropped Field Spell pictures.
-These are saved here:
-```text
-pics/field/
-```
-If the normal source does not have a field picture, the downloader can try the included Fields GitHub fallback.
-
-## Beta Option
+### Beta Option
 `Match duplicate Rush fallback rarities (beta)` is turned on by default.
 Some Rush cards have the same name but different card IDs. This option tries to pick a better Yugipedia picture for those duplicate cards.
 It does not change pictures that were already found on Rush-HD.
 Because this is based on guessing from card ID order and Yugipedia gallery data, it may not be perfect for every card.
 
-## Reports
+### Prefer Over Rush Rare Artwork
+Uses Over Rush Rare (ORR) artwork from the ORR Extension when available.
+Otherwise, the normal Rush-HD artwork is used.
+
+### Update Rush Art
+Updates existing Rush card pictures to match the current Prefer Over Rush Rare Artwork setting.
+Only Rush card pictures are affected.
+
+## Report
 
 The downloader only creates a report when there is something useful to report, such as:
 - missing pictures
@@ -125,9 +130,10 @@ python3.12 -m pip install --upgrade Pillow
 Special thanks to:
 - [Armytille/EDOPro-HD-Pics-Downloader](https://github.com/Armytille/EDOPro-HD-Pics-Downloader), which this project is based on.
 - [Yoshi80/Rush-HD-Pictures](https://github.com/Yoshi80/Rush-HD-Pictures), which provides the Rush Duel HD pictures used by this downloader.
+- [Rush-HD-ORR-Extension](https://github.com/Yoshi80/Rush-HD-ORR-Extension), provides Over Rush Rare artwork. 
 
 Additional data and images may be provided by:
 - [YGOPRODeck](https://ygoprodeck.com/) up to **20 requests per second**.
-- [Yugipedia](https://yugipedia.com/) up to **3 concurrent requests**.<br>
+- [Yugipedia](https://yugipedia.com/) up to **3 concurrent requests**, mostly a fallback for Rush cards.<br>
 The downloader respects the recommended request limits. This helps reduce random errors and missing downloads.
 
