@@ -53,11 +53,11 @@ If you download PNG, it can delete the old JPG.
 For fixed-size downloads, this skips pictures that are already big enough.<br>
 Note: Some YGOProDeck images are at only 421x614 or lower, so they will always download at those sizes. 
 
-## Standard Picture Sources
+### Standard Picture Sources
 1. YGOPROdeck
 2. Yugipedia (usualyl not used)
 
-## Rush Picture Sources
+### Rush Picture Sources
 Rush cards are tried in this order:
 1. Rush-HD GitHub
 2. Yugipedia
