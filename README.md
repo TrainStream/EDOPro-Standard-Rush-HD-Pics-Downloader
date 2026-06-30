@@ -124,11 +124,7 @@ Special thanks to:
 - [Yoshi80/Rush-HD-Pictures](https://github.com/Yoshi80/Rush-HD-Pictures), which provides the Rush Duel HD pictures used by this downloader.
 
 Additional data and images may be provided by:
-- [YGOPRODeck](https://ygoprodeck.com/)
-- [Yugipedia](https://yugipedia.com/)
-
-The downloader respects the recommended request limits:
-- **YGOPRODeck:** up to **20 requests per second** (official limit).
-- **Yugipedia:** up to **3 concurrent requests** (conservative limit).<br>
-This helps reduce random errors and missing downloads.
+- [YGOPRODeck](https://ygoprodeck.com/) up to **20 requests per second**.
+- [Yugipedia](https://yugipedia.com/) up to **3 concurrent requests**.<br>
+The downloader respects the recommended request limits. This helps reduce random errors and missing downloads.
 
