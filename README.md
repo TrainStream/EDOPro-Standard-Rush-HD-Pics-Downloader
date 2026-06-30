@@ -1,12 +1,14 @@
 # EDOPro Standard/Rush HD Pics Downloader
 Warning! AI Slop! But it works! <br>
-Tested only on Windows. Linux and macOS might might be buggy. 
+Tested only on Windows. Linux and macOS might might be buggy.
 
 This is a simple HD picture downloader for EDOPro.
 It can download:
 - Standard card pictures
 - Rush Duel card pictures
 - cropped Field Spell pictures
+
+[DOWNLOAD HERE](https://github.com/TrainStream/EDOPro-Standard-Rush-HD-Pics-Downloader/releases)
 ## Easy Install
 Put the files in your EDOPro folder, where EDOPro.exe is. Do not put them inside the `pics` folder.
 1. Use the "install-python-dependencies" file for your operating system or [install Python 3.12 manually](https://www.python.org/downloads/).
