@@ -123,6 +123,12 @@ Special thanks to:
 - [Armytille/EDOPro-HD-Pics-Downloader](https://github.com/Armytille/EDOPro-HD-Pics-Downloader), which this project is based on.
 - [Yoshi80/Rush-HD-Pictures](https://github.com/Yoshi80/Rush-HD-Pictures), which provides the Rush Duel HD pictures used by this downloader.
 
-Additional data and images may come from:
+Additional data and images may be provided by:
 - [YGOPRODeck](https://ygoprodeck.com/)
 - [Yugipedia](https://yugipedia.com/)
+
+The downloader respects the recommended request limits:
+- **YGOPRODeck:** up to **20 requests per second** (official limit).
+- **Yugipedia:** up to **3 concurrent requests** (conservative limit).<br>
+This helps reduce random errors and missing downloads.
+
