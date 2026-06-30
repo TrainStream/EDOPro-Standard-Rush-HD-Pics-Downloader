@@ -13,8 +13,9 @@ It can download:
 Put the files in your EDOPro folder, where EDOPro.exe is. Do not put them inside the `pics` folder.
 1. Use the "install-python-dependencies" file for your operating system or [install Python 3.12 manually](https://www.python.org/downloads/).
     - The downloader.py also uses `tkinter`, which is the normal Python window/GUI system. On Windows it usually comes with Python. On Linux/macOS it may need to be installed separately.
+    - The installers attempt to install everything needed.
 
-2. On Windows, double-click the `EDOPro-Standard-Rush-HD-Pics-Downloader.py` file to run it. Only works if Python is installed.
+2. Double-click the `EDOPro-Standard-Rush-HD-Pics-Downloader.py` file to run it. Only works if Python is installed.
 
 > [!WARNING]
 > Yugipedia may occasionally be unstable. This usually only affect Rush cards downloads.<br>
