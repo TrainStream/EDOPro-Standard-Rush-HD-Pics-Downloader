@@ -9,8 +9,8 @@ It can download:
 - cropped Field Spell pictures
 
 Downloading ~18k pics takes around **17–20 minutes**.<br>
-If images need to be converted from their original file format, processing time may be longer depending on your CPU performance.<br>
-On my system, JPG high took about 20 minutes in total.<br>
+If images need to be converted from their original file format, processing time may be a bit longer.<br>
+On my system, JPG high took about 20 minutes in total. It depends on CPU perfomance.<br>
 
 
 [DOWNLOAD HERE](https://github.com/TrainStream/EDOPro-Standard-Rush-HD-Pics-Downloader/releases)
