@@ -7,6 +7,7 @@ It can download:
 - Standard card pictures
 - Rush Duel card pictures
 - cropped Field Spell pictures
+It can take around 17-20 minutes for 18k pics. 
 
 [DOWNLOAD HERE](https://github.com/TrainStream/EDOPro-Standard-Rush-HD-Pics-Downloader/releases)
 ## Easy Install
@@ -15,7 +16,7 @@ Put the files in your EDOPro folder, where EDOPro.exe is. Do not put them inside
     - The downloader.py also uses `tkinter`, which is the normal Python window/GUI system. On Windows it usually comes with Python. On Linux/macOS it may need to be installed separately.
     - The installers attempt to install everything needed.
 
-2. Double-click the `EDOPro-Standard-Rush-HD-Pics-Downloader.py` file to run it. Only works if Python is installed.
+2. Double-click the `EDOPro-Standard-Rush-HD-Pics-Downloader.py` file to run it. Only works if Python is installed. 
 
 > [!WARNING]
 > Yugipedia may occasionally be unstable. This usually only affect Rush cards downloads.<br>
@@ -34,28 +35,35 @@ Downloads Rush Duel card pictures.
 Choose the file type:
 - `JPG`
 - `PNG`
+- `Original` (6.11 GB)
+Original keeps the original file tpye (mostly JPG for Standard, PNG for Rush).
 
 Choose the size:
-- `Full quality` (2.85GB for 18k pics)
-- `443x640` (1.21GB for 18k pics)
+- `Full Resolution` (3.7 GB for 18k pics, jpg high)
+- `443x640` (1.14 GB for 18k pics, jpg balanced)
 - `421x614`
+
+JPG Quality
+- `Balanced`, quality=75, optimize=true, subsampling=2
+- `High`, quality=95, optimize=true, subsampling=0
 
 The fixed sizes do not make small pictures bigger. They only shrink larger pictures when needed.
 
 ### Force Overwrite Existing
 Download again even if the picture already exists.
 
-### Delete old opposite format first
+### Delete other format first
 If you download JPG, it can delete the old PNG.
 If you download PNG, it can delete the old JPG.
+If you download Original, it downloads and then compares.
 
-### Skip if current image is same size or larger
-For fixed-size downloads, this skips pictures that are already big enough.<br>
+### Skip same or larger images
+For non-full resolutions only. This skips pictures that are already same resolution or higher.<br>
 Note: Some YGOProDeck images are at only 421x614 or lower, so they will always download at those sizes. 
 
 ### Standard Picture Sources
 1. YGOPROdeck
-2. Yugipedia (usualyl not used)
+2. Yugipedia (usually not used)
 
 ### Rush Picture Sources
 Rush cards are tried in this order:
@@ -77,12 +85,11 @@ Because this is based on guessing from card ID order and Yugipedia gallery data,
 Uses Over Rush Rare (ORR) artwork from the ORR Extension when available.
 Otherwise, the normal Rush-HD artwork is used.
 
-### Update Rush Art
+### Update Rush Artwork
 Updates existing Rush card pictures to match the current Prefer Over Rush Rare Artwork setting.
 Only Rush card pictures are affected.
 
 ## Report
-
 The downloader only creates a report when there is something useful to report, such as:
 - missing pictures
 - errors
@@ -130,7 +137,7 @@ python3.12 -m pip install --upgrade Pillow
 Special thanks to:
 - [Armytille/EDOPro-HD-Pics-Downloader](https://github.com/Armytille/EDOPro-HD-Pics-Downloader), which this project is based on.
 - [Yoshi80/Rush-HD-Pictures](https://github.com/Yoshi80/Rush-HD-Pictures), which provides the Rush Duel HD pictures used by this downloader.
-- [Rush-HD-ORR-Extension](https://github.com/Yoshi80/Rush-HD-ORR-Extension), provides Over Rush Rare artwork. 
+- [Yoshi80/Rush-HD-ORR-Extension](https://github.com/Yoshi80/Rush-HD-ORR-Extension), provides Over Rush Rare artwork. 
 
 Additional data and images may be provided by:
 - [YGOPRODeck](https://ygoprodeck.com/) up to **20 requests per second**.
