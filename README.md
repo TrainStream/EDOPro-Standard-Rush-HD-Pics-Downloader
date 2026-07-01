@@ -41,7 +41,7 @@ Downloads Rush Duel card pictures.
 Choose the file type:
 - `JPG` (Default, Recommended)
 - `PNG`
-- `Original` (6.11 GB)
+- `Original` (6.11 GB for 18k pics)
 
 Original keeps the original file type (mostly JPG for Standard, PNG for Rush).
 
