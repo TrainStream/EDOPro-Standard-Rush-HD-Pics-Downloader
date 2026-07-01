@@ -43,7 +43,7 @@ Choose the file type:
 - `PNG`
 - `Original` (6.11 GB)
 
-Original keeps the original file tpye (mostly JPG for Standard, PNG for Rush).
+Original keeps the original file type (mostly JPG for Standard, PNG for Rush).
 
 Choose the size:
 - `Full Resolution` (3.7 GB for 18k pics, jpg high)
