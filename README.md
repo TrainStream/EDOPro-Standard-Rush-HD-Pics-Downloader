@@ -23,6 +23,8 @@ Put the files in your EDOPro folder, where EDOPro.exe is. Do not put them inside
 > If some images fail to download, wait a few hours and try again before reporting a bug.<br>
 > If "**Skip same size or larger**" is enabled, it will mostly skip previously downloaded ones and do the ones that failed.<br>
 
+<img width="1040" height="750" alt="GUI" src="https://github.com/user-attachments/assets/4dca1e8b-ec01-4a2a-b52e-b489907df547" />
+
 ## Main Options
 
 ### Standard cards
