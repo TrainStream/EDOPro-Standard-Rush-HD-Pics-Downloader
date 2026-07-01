@@ -7,6 +7,7 @@ It can download:
 - Standard card pictures
 - Rush Duel card pictures
 - cropped Field Spell pictures
+
 It can take around 17-20 minutes for 18k pics. 
 
 [DOWNLOAD HERE](https://github.com/TrainStream/EDOPro-Standard-Rush-HD-Pics-Downloader/releases)
